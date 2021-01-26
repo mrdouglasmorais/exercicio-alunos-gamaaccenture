@@ -1,0 +1,15 @@
+.dash-contentheading{
+    margin: 30px 0px 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dash-button--logout{
+    background-color: blueviolet;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    cursor: pointer;
+}
