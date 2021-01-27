@@ -116,7 +116,7 @@ let Dash = {
             ${ModalCredit}
             ${ModalDebit}
 
-            <div class="row align-items-center mt-5">
+            <div class="row align-items-center mt-5"> -
                 ${ComponentsData ? ComponentsData.map( data => (`
                 <div class="col">  
                          <div class="card" style="width: 100%;">
@@ -126,7 +126,7 @@ let Dash = {
                                  <p class="card-text">Movimentação tipo: ${data.tipoMovimento}</p>
                              </div>
                          </div>
-                     </div>`)) : ''}
+                     </div>`)) : ('')}
             </div>
         </div>
         `
