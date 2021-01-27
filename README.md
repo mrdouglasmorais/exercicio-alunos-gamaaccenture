@@ -1,4 +1,4 @@
-#Appp Frontend Full JS
+#App Frontend Full JS
 Gama Academy | Accenture 1.2
 
 Projeto em Javascript Vanilla.
