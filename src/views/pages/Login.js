@@ -11,6 +11,7 @@ let Login = {
                 <div class="col-m-6">
                     <img src="https://ghaio.com.br/wp-content/uploads/2019/08/fim-conta-digital.png" width="50%">
                 </div>
+            
                 <div>
                     <input type="text" id="username" placeholder="Nome de usuário">
                     <input type="password" id="passlogin" placeholder="Senha">
