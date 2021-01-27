@@ -1,2 +1,2 @@
-# exercicio-alunos-gamaaccenture
-exercício alunos gama accenture
+#Appp Frontend Full JS
+Gama Academy

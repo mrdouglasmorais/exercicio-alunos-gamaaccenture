@@ -1,5 +1,5 @@
 
-import BaseURL from '../../service/BaseURL.js'
+import baseURL from '../../service/baseURL.js'
 
 // document.postRegisterNewUser = async () =>{
 //     const options = {
@@ -17,12 +17,12 @@ import BaseURL from '../../service/BaseURL.js'
 //             password: document.getElementById('password').value
 //         }
 
-//         // const response = await fetch(BaseURL, {
+//         // const response = await fetch(baseURL, {
 //         //     method: 'post',
 //         //     body: JSON.stringify(RegisterData)
 //         // })
 //         // const json = await response.json();
-//         axios.post(BaseURL, RegisterData, options).then(
+//         axios.post(baseURL, RegisterData, options).then(
 //             res => {
 //                 console.log(res.data)
 //             }
@@ -69,7 +69,7 @@ let SignUp = {
             
             if ( passwordVal === RepasswordVal ){
 
-                axios.post(`${BaseURL}usuarios`, {
+                axios.post(`${baseURL}usuarios`, {
                     cpf: CPF,
                     login: userMail,
                     nome: nameVal,

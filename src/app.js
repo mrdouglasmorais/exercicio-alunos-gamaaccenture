@@ -1,6 +1,3 @@
-// Style
-import './css/style.css'
-
 // Default components
 import Footer from './views/components/Footer.js'
 import Nav from './views/components/Nav.js';
@@ -14,7 +11,7 @@ import Error404 from './views/pages/Error404.js';
 
 // Utils
 import Utils from './service/Utils.js';
-import BaseURL from './service/BaseURL.js'
+import BaseURL from './service/baseURL.js'
 
 // Lista de rotas com suporte. Qualquer URL diferente dessas rotas gerará um erro 404
 let routes = {

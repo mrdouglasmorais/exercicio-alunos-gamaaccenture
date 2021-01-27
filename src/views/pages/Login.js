@@ -1,4 +1,4 @@
-import BaseURL from '../../service/BaseURL.js'
+import baseURL from '../../service/baseURL.js'
 import IsAuthenticated from '../../service/isAuth.js'
 
 let Login = {
@@ -14,7 +14,7 @@ let Login = {
                 <div>
                     <input type="text" id="username" placeholder="Nome de usuário">
                     <input type="password" id="passlogin" placeholder="Senha">
-                    <button id="login_start">Logar</button>
+                    <button id="login_start" type="button" class="btn btn-primary btn-lg">Login</button>
                 </div>
             </div>
         </div>
@@ -29,20 +29,21 @@ let Login = {
             
             if ( nameUser.length >= 4 && userPass.length >= 4 ){
 
-                axios.post(`${BaseURL}login`, {
+                axios.post(`${baseURL}login`, {
                     usuario: nameUser,
                     senha: userPass,
-                }, {
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
                 })
                 .then( res => {
-                    if ( res.status === 200 ){
-                        window.location.replace('#/dashboard')
-                        localStorage.setItem('@token', res.data.token)
-                        localStorage.setItem('userDataAccount', JSON.stringify(res.data))
-                    }
+
+
+                        if ( res.status === 200 ){
+                            window.location.replace('#/dashboard')
+                            localStorage.setItem('userDataAccount', JSON.stringify(res.data))
+                        } 
+                    
+                }).catch((err) => {
+                    alert( err.response.data.error)
+                    window.location.replace('#/signup') 
                 })
 
             } else {
